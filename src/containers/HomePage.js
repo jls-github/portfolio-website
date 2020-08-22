@@ -5,8 +5,8 @@ import ProjectContainer from './ProjectContainer.js'
 const HomePage = () => {
     return <div>
         <h1>Home Page</h1>
-        <ContactInformation />
         <ProjectContainer />
+        <ContactInformation />
     </div>
 };
 
