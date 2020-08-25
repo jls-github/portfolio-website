@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar.js'
 const HomePage = () => {
     return <div>
         <Navbar />
-        <h1>Home Page</h1>
+        {/* Replace this with a nice looking landing screen */}<h1>Home Page</h1>
         <ProjectContainer />
         <ContactInformation />
     </div>
