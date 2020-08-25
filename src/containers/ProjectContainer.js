@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Project from '../components/Project.js'
+import Project from '../components/Project.js';
 
 const ProjectContainer = () => {
 
@@ -17,4 +17,4 @@ const ProjectContainer = () => {
     </div>
 };
 
-export default ProjectContainer
+export default ProjectContainer;

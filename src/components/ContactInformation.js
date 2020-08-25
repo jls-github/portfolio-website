@@ -8,4 +8,4 @@ const ContactInformation = () => {
     </div>
 };
 
-export default ContactInformation
+export default ContactInformation;
