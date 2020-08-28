@@ -54,6 +54,8 @@
 	background-color: #808C7D;
 	display: grid;
 	justify-content: space-evenly;
+
+	/* grid for desktop - may have to alter for responsive mobile view */
 	grid-template-rows: 3rem auto;
 	grid-template-columns: auto auto auto auto;
 }
