@@ -11,7 +11,7 @@ const ProjectContainer = () => {
         })
     }
 
-    return <div>
+    return <div className="projectContainer">
         <h2>Projects</h2>
         {projects ? populateProjects() : null}
     </div>

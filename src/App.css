@@ -10,14 +10,14 @@
 .main {
 	display: grid;
 	/* desktop view grid */
-	grid-template-rows: 2.5rem 30rem auto;
+	grid-template-rows: 2.5rem 35rem auto auto;
 }
 
 
 /* navbar styling */
 
 .navbar { 
-	background-color: grey;
+	background-color: #76768C;
 	width: 100%;
 }
 
@@ -33,4 +33,20 @@
 	list-style: none;
 }
 
+/* carosel styling */
+
+.carosel {
+	background-color: #CCCCDA;
+}
+
+
+/* project styling */
+
+.projectContainer {
+	background-color: #808C7D;
+}
+
+.project {
+	background-color: #BED9B6;
+}
 
