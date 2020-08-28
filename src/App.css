@@ -10,7 +10,7 @@
 .main {
 	display: grid;
 	/* desktop view grid */
-	grid-template-rows: 2.5rem auto;
+	grid-template-rows: 2.5rem 30rem auto;
 }
 
 
