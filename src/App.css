@@ -5,9 +5,17 @@
 	border: 0;
 }
 
+/* main grid */
+
+.main {
+	display: grid;
+}
+
+
+/* navbar styling */
+
 .navbar { 
 	/* This will need to be adjusted to represent a part of the overall website grid */
-	display: flex;
 	background-color: grey;
 	height: 1.25rem; 
 	width: 100%;
