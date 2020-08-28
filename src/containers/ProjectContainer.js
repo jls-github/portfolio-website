@@ -3,7 +3,7 @@ import Project from '../components/Project.js';
 
 const ProjectContainer = () => {
 
-    const [projects, setProjects] = useState(["", ""])
+    const [projects, setProjects] = useState(["", "", "", "", "", "", "", ""])
 
     const populateProjects = () => {
         return projects.map(project => {

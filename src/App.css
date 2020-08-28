@@ -5,6 +5,14 @@
 	border: 0;
 }
 
+/* colors
+#76768C
+#D9C2B6
+#CCCCDA
+#BED9B6
+#808C7D
+*/
+
 /* main grid */
 
 .main {
@@ -44,9 +52,24 @@
 
 .projectContainer {
 	background-color: #808C7D;
+	display: grid;
+	justify-content: space-evenly;
+	grid-template-rows: 3rem auto;
+	grid-template-columns: auto auto auto auto;
+}
+
+.projectContainer h2 {
+	grid-column: 1 / span 4;
+	text-align: center;
 }
 
 .project {
 	background-color: #BED9B6;
+	display: block;
+
+	/* sizing for desktop - will have top add media query for mobile */
+	height: 15rem;
+	width: 12rem;
+	border: solid black;
 }
 
