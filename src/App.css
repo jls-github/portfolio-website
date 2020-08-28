@@ -9,15 +9,15 @@
 
 .main {
 	display: grid;
+	/* desktop view grid */
+	grid-template-rows: 2.5rem auto;
 }
 
 
 /* navbar styling */
 
 .navbar { 
-	/* This will need to be adjusted to represent a part of the overall website grid */
 	background-color: grey;
-	height: 1.25rem; 
 	width: 100%;
 }
 
@@ -32,3 +32,5 @@
 .navbar ul li {
 	list-style: none;
 }
+
+

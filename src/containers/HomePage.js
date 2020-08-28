@@ -4,7 +4,7 @@ import ProjectContainer from './ProjectContainer.js';
 import Navbar from '../components/Navbar.js';
 
 const HomePage = () => {
-    return <div>
+    return <div className="main">
         <Navbar />
         {/* Replace this with a nice looking landing screen */}<h1>Home Page</h1>
         <ProjectContainer />
