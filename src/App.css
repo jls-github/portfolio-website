@@ -76,13 +76,44 @@
 	justify-content: space-evenly;
 
 	/* grid for desktop - may have to alter for responsive mobile view */
-	grid-template-rows: 3rem auto;
+	grid-template-rows: auto;
 	grid-template-columns: auto auto auto auto;
 }
 
-.projectContainer h2 {
+.projectContainer .project-header {
 	grid-column: 1 / span 4;
 	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: static;
+}
+
+.projectContainer .project-header .project-image{
+	height: 8rem;
+	/* position: absolute; */
+	display: flex;
+	justify-content: center;
+}
+
+.projectContainer .project-header .project-image .project-image-overlay {
+	background-color: black;
+	opacity: 0.4;
+	height: 8rem;
+	width: 40%;
+	position: absolute;
+}
+
+.projectContainer .project-header .project-image img {
+	height: 8rem;
+	width: 40%;
+}
+
+.projectContainer .project-header h2 {
+	display: block;
+	position: absolute;
+	font-size: 4rem;
+	color: white;
 }
 
 .project {
