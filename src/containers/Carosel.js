@@ -1,5 +1,5 @@
 import React from 'react';
-import SeattlePicture from '../images/SeattlePicture.jpg'
+import SeattlePicture from '../images/SeattlePicture.jpg';
 
 const Carosel = () => {
     return <div className="carosel">
