@@ -98,41 +98,36 @@
 
 .projectContainer .project-header {
 	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: static;
+	position: relative;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
-
+	height: 8rem;
+	width: 50%;
 }
 
 .projectContainer .project-header .project-image{
-	height: 8rem;
-	/* position: absolute; */
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.projectContainer .project-header .project-header-text {
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.8);
+	top: 10%;
+	left: 5%;
+	height: 80%;
+	width: 90%;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
-.projectContainer .project-header .project-image .project-image-overlay {
-	background-color: black;
-	opacity: 0.4;
-	height: 8rem;
-	width: 40%;
-	position: absolute;
+.projectContainer .project-header .project-header-text h2 {
+	display: inline-block;
+	font-size: 3rem;
 }
 
-.projectContainer .project-header .project-image img {
-	height: 8rem;
-	width: 40%;
-}
-
-.projectContainer .project-header h2 {
-	display: block;
-	position: absolute;
-	font-size: 4rem;
-	color: white;
-}
 
 .projectFlexBox {
 	display: flex;

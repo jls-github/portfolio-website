@@ -12,13 +12,19 @@ const ProjectContainer = () => {
         })
     }
 
+    let backgroundProperties = {
+        backgroundImage: `url(${CoffeeCodingPicture})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+      }
+
     return <div className="projectContainer">
         <div className="project-header">
-            <div className="project-image">
-                <div className="project-image-overlay"></div>
-                <img src={CoffeeCodingPicture} alt=""/>
+            <div className="project-image" style={backgroundProperties}></div>
+            <div className="project-header-text">
+                <h2>Projects</h2>
             </div>
-            <h2>Projects</h2>
         </div>
         <div className="projectFlexBox">
             {projects ? populateProjects() : null}
