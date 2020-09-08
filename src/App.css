@@ -118,7 +118,7 @@
 
 .project {
 	background-color: #CCCCDA;
-	display: block;
+	
 
 	/* sizing for desktop - will have top add media query for mobile */
 	height: 15rem;
