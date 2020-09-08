@@ -31,7 +31,7 @@
 	height: 2.5rem;
 	position: fixed;
 	z-index: 1;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #76768C;
 }
 
 .navbar ul {
@@ -51,27 +51,46 @@
 .carosel {
 	height: 100%;
 	width: 100%;
+	position: relative;
 	overflow: hidden;
 }
 
 .carosel .carosel-image {
 	width: 100%;
 	height: 100%;
+	position: absolute;
+	opacity: 0.4;
 }
 
-.carosel .carosel-image .carosel-image-overlay {
+.carosel .carosel-header {
+	top: 5rem;
+	left: 1rem;
+	position: absolute;
+}
+
+.carosel .carosel-header .carosel-title {
+	font-size: 5rem;
+}
+.carosel .carosel-header .carosel-subtitle {
+	font-size: 2rem;
+}
+
+
+
+/* if we need an overlay */
+/* .carosel .carosel-image .carosel-image-overlay {
 	width: 100%;
 	height: 100%;
-	background-color: #CCCCDA
-	;
+	background-color: #CCCCDA;
 	opacity: 0.5;
-}
+	display: none;
+} */
 
 /* project styling */
 
 .projectContainer {
 	background-color: white;
-	border-top: 10px solid #808C7D;
+	border-top: 5px solid #76768C;
 	justify-content: space-evenly;
 }
 
