@@ -72,16 +72,10 @@
 .projectContainer {
 	background-color: #BED9B6;
 	border-top: 10px solid #808C7D;
-	display: grid;
 	justify-content: space-evenly;
-
-	/* grid for desktop - may have to alter for responsive mobile view */
-	grid-template-rows: auto;
-	grid-template-columns: auto auto auto auto;
 }
 
 .projectContainer .project-header {
-	grid-column: 1 / span 4;
 	text-align: center;
 	display: flex;
 	align-items: center;
@@ -114,6 +108,12 @@
 	position: absolute;
 	font-size: 4rem;
 	color: white;
+}
+
+.projectFlexBox {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
 }
 
 .project {

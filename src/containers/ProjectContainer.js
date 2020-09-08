@@ -20,7 +20,10 @@ const ProjectContainer = () => {
             </div>
             <h2>Projects</h2>
         </div>
-        {projects ? populateProjects() : null}
+        <div className="projectFlexBox">
+            {projects ? populateProjects() : null}
+
+        </div>
     </div>
 };
 
