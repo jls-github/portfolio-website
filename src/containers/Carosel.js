@@ -11,7 +11,8 @@ const Carosel = () => {
     }
 
     return <div className="carosel">
-        <div className="carosel-overlay" style={ backgroundProperties }>
+        <div className="carosel-image" style={ backgroundProperties }>
+          <div className="carosel-image-overlay"></div>
         </div>
     </div>
 };

@@ -26,11 +26,12 @@
 /* navbar styling */
 
 .navbar { 
-	background-color: #808C7D;
+	background-color: #BED9B6;
 	width: 100%;
 	height: 2.5rem;
 	position: fixed;
 	z-index: 1;
+	border-bottom: 1px solid black;
 }
 
 .navbar ul {
@@ -53,15 +54,23 @@
 	overflow: hidden;
 }
 
-.carosel .carosel-overlay {
+.carosel .carosel-image {
 	width: 100%;
 	height: 100%;
+}
+
+.carosel .carosel-image .carosel-image-overlay {
+	width: 100%;
+	height: 100%;
+	background-color: #CCCCDA
+	;
+	opacity: 0.5;
 }
 
 /* project styling */
 
 .projectContainer {
-	background-color: #BED9B6;
+	background-color: white;
 	border-top: 10px solid #808C7D;
 	justify-content: space-evenly;
 }
