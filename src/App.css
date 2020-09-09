@@ -18,7 +18,7 @@
 .main {
 	display: grid;
 	/* desktop view grid */
-	grid-template-rows: 100vh auto auto;
+	grid-template-rows: 100vh calc(100vh - 2.5rem) auto;
 	grid-template-columns: 100%;
 }
 
@@ -93,7 +93,27 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border-top: 5px solid #76768C;
+	position: relative;
+	/* border-top: 5rem solid #76768C;
+	border-bottom: 5rem solid #76768C; */
+}
+
+.projectContainer::before {
+	content: "";
+	position: absolute;
+	height: calc(10% - 1.25rem);
+	width: 100%;
+	top: 0;
+	background-color: green;
+}
+
+.projectContainer::after {
+	content: "";
+	position: absolute;
+	height: calc(10% - 1.25rem);
+	width: 100%;
+	bottom: 0;
+	background-color: green;
 }
 
 .projectContainer .project-header {

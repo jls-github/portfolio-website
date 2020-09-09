@@ -4,7 +4,7 @@ import CoffeeCodingPicture from '../images/coffee-coding-picture.jpeg';
 
 const ProjectContainer = () => {
 
-    const [projects, setProjects] = useState(["", "", "", "", "", "", ""])
+    const [projects, setProjects] = useState(["", "", "", ""])
 
     const populateProjects = () => {
         return projects.map(project => {
