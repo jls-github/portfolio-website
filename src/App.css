@@ -18,7 +18,7 @@
 .main {
 	display: grid;
 	/* desktop view grid */
-	grid-template-rows: 37.5rem auto auto;
+	grid-template-rows: 100vh auto auto;
 	grid-template-columns: 100%;
 }
 
