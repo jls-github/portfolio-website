@@ -21,14 +21,17 @@ const ProjectContainer = () => {
 
     return <div className="projectContainer">
         <div className="project-header">
-            <div className="project-image" style={backgroundProperties}></div>
+            {/* <div className="project-image" style={backgroundProperties}></div>
             <div className="project-header-text">
                 <h2>Projects</h2>
-            </div>
+            </div> */}
+            <h2>Projects</h2>
         </div>
-        <div className="projectFlexBox">
-            {projects ? populateProjects() : null}
+        <div className="projectFlexBoxWrapper">
+            <div className="projectFlexBox">
+                {projects ? populateProjects() : null}
 
+            </div>
         </div>
     </div>
 };

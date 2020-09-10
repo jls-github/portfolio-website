@@ -88,10 +88,11 @@
 
 .projectContainer {
 	background-color: white;
-	display: flex;
+	display: grid;
 	flex-direction: column;
 	align-items: center;
 	position: relative;
+	grid-template-rows: 15% 10% 60% 15%;
 	/* border-top: 5rem solid #76768C;
 	border-bottom: 5rem solid #76768C; */
 }
@@ -99,31 +100,35 @@
 .projectContainer::before {
 	content: "";
 	position: absolute;
-	height: calc(10% - 1.25rem);
+	height: 10%;
 	width: 100%;
 	top: 0;
-	background-color: #76768C;
+	background-color: #808C7D;
+	border-bottom: 2px solid #D9C2B6;
 }
 
 .projectContainer::after {
 	content: "";
 	position: absolute;
-	height: calc(10% - 1.25rem);
+	height: 10%;
 	width: 100%;
 	bottom: 0;
-	background-color: #76768C;
+	background-color: #808C7D;
+	border-top: 2px solid #D9C2B6;
 }
 
 .projectContainer .project-header {
+	grid-row: 2;
 	text-align: center;
-	position: relative;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	height: 8rem;
 	width: 50%;
+	font-size: 3rem;
+	width: 100%
 }
 
-.projectContainer .project-header .project-image{
+/* .projectContainer .project-header .project-image{
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -144,8 +149,15 @@
 .projectContainer .project-header .project-header-text h2 {
 	display: inline-block;
 	font-size: 3rem;
-}
+} */
 
+
+.projectFlexBoxWrapper {
+	grid-row: 3;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
 
 .projectFlexBox {
 	display: flex;
