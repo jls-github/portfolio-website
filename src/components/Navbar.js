@@ -1,24 +1,34 @@
-import React, {useState} from 'react';
+import React from 'react';
 
-const Navbar = () => {
+const Navbar = (props) => {
 
-    const [active, setActive] = useState("HOME")
+    const {activePage, onSetActive} = props
+    console.log(props)
+
+    const setActive = (page) => {
+        onSetActive(page)
+    }
 
     const onClickHome = e => {
         setActive("HOME")
+        console.log("clicked")
     }
 
     const onClickProjects = e => {
+        console.log("clicked")
         setActive("PROJECTS")
+
     }
 
     const onClickContact = e => {
         setActive("CONTACT")
+        console.log("clicked")
+
     }
 
 
     const activeSwitch = () => {
-        switch(active){
+        switch(activePage){
             case("HOME"):
                 return(
                     <ul className="black-style">
