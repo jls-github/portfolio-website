@@ -29,7 +29,7 @@
 	position: fixed;
 	z-index: 1;
 	border-bottom: 1px solid #76768C;
-	left: 1rem;
+	left: 2rem;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -42,12 +42,39 @@
 	justify-content: space-between;
 }
 
+.navbar .white-style {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar .black-style {
+	color: rgba(0, 0, 0, 0.5);
+}
+
 .navbar ul li {
 	list-style: none;
+	font-size: 1.5rem;
 	/* this color will have to change for what page is active */
+}
+
+.navbar ul li:hover {
+	cursor: pointer;
+}
+
+.navbar .white-style li:hover {
 	color: white;
 }
 
+.navbar .black-style li:hover {
+	color: black;
+}
+
+.navbar .white-style .active-li {
+	color: white;
+}
+
+.navbar .black-style .active-li {
+	color: black;
+}
 /* carosel styling */
 
 .carosel {
