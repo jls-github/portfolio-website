@@ -119,28 +119,24 @@
 
 .projectContainer .project-header {
 	grid-row: 2;
-	text-align: center;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
 	height: 8rem;
-	width: 50%;
 	font-size: 3rem;
-	width: 100%
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* .projectContainer .project-header .project-image{
 	position: absolute;
 	height: 100%;
 	width: 100%;
-}
+} */
 
 .projectContainer .project-header .project-header-text {
-	position: absolute;
 	background-color: rgba(255, 255, 255, 0.8);
-	top: 10%;
-	left: 5%;
 	height: 80%;
-	width: 90%;
+	width: 25%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -149,7 +145,7 @@
 .projectContainer .project-header .project-header-text h2 {
 	display: inline-block;
 	font-size: 3rem;
-} */
+}
 
 
 .projectFlexBoxWrapper {

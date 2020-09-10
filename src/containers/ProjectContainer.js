@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Project from '../components/Project.js';
 import CoffeeCodingPicture from '../images/coffee-coding-picture.jpeg';
+import CodePicture from '../images/code-picture.jpg';
 
 const ProjectContainer = () => {
 
@@ -12,20 +13,26 @@ const ProjectContainer = () => {
         })
     }
 
+    // let backgroundProperties = {
+    //     backgroundImage: `url(${CoffeeCodingPicture})`,
+    //     backgroundPosition: 'center',
+    //     backgroundSize: 'cover',
+    //     backgroundRepeat: 'no-repeat',
+    //   }
+
     let backgroundProperties = {
-        backgroundImage: `url(${CoffeeCodingPicture})`,
+        backgroundImage: `url(${CodePicture})`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
       }
 
-    return <div className="projectContainer">
+    return <div className="projectContainer" style={backgroundProperties}>
         <div className="project-header">
-            {/* <div className="project-image" style={backgroundProperties}></div>
+            {/* <div className="project-image" style={backgroundProperties}></div>*/}
             <div className="project-header-text">
                 <h2>Projects</h2>
-            </div> */}
-            <h2>Projects</h2>
+            </div>
         </div>
         <div className="projectFlexBoxWrapper">
             <div className="projectFlexBox">
