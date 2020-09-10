@@ -4,12 +4,13 @@ const Navbar = () => {
     return <div className="navbar">
         <ul>
             <li>Home</li>
-            <li>Resume</li>
+            <li>Projects</li>
+            <li>Contact</li>
+            {/* add the following in as buttons
             <li>Blog</li>
             <li>Github</li>
             <li>LinkedIn</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li>Resume</li> */}
         </ul>
     </div>
 };
