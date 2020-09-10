@@ -38,10 +38,14 @@
 .navbar ul {
 	display: flex;
 	flex-direction: column;
+	height: 25%;
+	justify-content: space-between;
 }
 
 .navbar ul li {
 	list-style: none;
+	/* this color will have to change for what page is active */
+	color: white;
 }
 
 /* carosel styling */
@@ -98,23 +102,38 @@
 }
 
 .projectContainer::before {
-	content: "";
+	content: "Some sort of quote goes here";
 	position: absolute;
-	height: 10%;
+	height: 5%;
 	width: 100%;
 	top: 0;
 	background-color: #808C7D;
 	border-bottom: 2px solid #D9C2B6;
+	z-index: 1;
 }
 
 .projectContainer::after {
-	content: "";
+	content: "Some sort of quote goes here";
 	position: absolute;
-	height: 10%;
+	height: 5%;
 	width: 100%;
 	bottom: 0;
 	background-color: #808C7D;
 	border-top: 2px solid #D9C2B6;
+	z-index: 1;
+}
+
+.project-background {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.project-background-overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.4)
 }
 
 .projectContainer .project-header {
@@ -125,6 +144,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 1;
 }
 
 /* .projectContainer .project-header .project-image{
@@ -134,12 +154,14 @@
 } */
 
 .projectContainer .project-header .project-header-text {
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgb(255, 255, 255, 0.9);
 	height: 80%;
 	width: 25%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border: 3px solid #808C7D;
+	border-radius: 5px;
 }
 
 .projectContainer .project-header .project-header-text h2 {
@@ -160,6 +182,7 @@
 	justify-content: space-around;
 	flex-wrap: wrap;
 	width: 60%;
+	z-index: 1;
 }
 
 .project {

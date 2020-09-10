@@ -27,7 +27,9 @@ const ProjectContainer = () => {
         backgroundRepeat: 'no-repeat',
       }
 
-    return <div className="projectContainer" style={backgroundProperties}>
+    return <div className="projectContainer">
+        <div className="project-background" style={backgroundProperties}></div>
+        <div className="project-background-overlay"></div>
         <div className="project-header">
             {/* <div className="project-image" style={backgroundProperties}></div>*/}
             <div className="project-header-text">
