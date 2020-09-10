@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const Navbar = () => {
+
+    const [active, setActive] = useState("HOME")
+
     return <div className="navbar">
         <ul>
             <li>Home</li>
