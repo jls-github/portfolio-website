@@ -9,29 +9,21 @@ const Navbar = (props) => {
     const contactRef = useRef(null)
     const ulRef = useRef(null)
 
-    console.log(props)
 
     const setActive = (page) => {
-        console.log(props)
-        console.log(page)
-        props.onSetActive(page)
+        onSetActive(page)
     }
 
     const onClickHome = e => {
         setActive("HOME")
-        console.log("clicked")
     }
 
     const onClickProjects = e => {
-        console.log("clicked")
         setActive("PROJECTS")
-
     }
 
     const onClickContact = e => {
         setActive("CONTACT")
-        console.log("clicked")
-
     }
     
     useEffect(() => {
@@ -65,15 +57,15 @@ const Navbar = (props) => {
 
     return <div className="navbar">
         <ul className="black-style" ref={ulRef}>
-                        <li ref={homeRef} onClick={(e) => onClickHome(e)} className="active-li">Home</li>
-                        <li ref={projectsRef} onClick={(e) => onClickProjects(e)}>Projects</li>
-                        <li ref={contactRef} onClick={(e) => onClickContact(e)}>Contact</li>
-                        {/* add the following in as buttons
-                        <li>Blog</li>
-                        <li>Github</li>
-                        <li>LinkedIn</li>
-                    <li>Resume</li> */}
-                  </ul>
+            <li ref={homeRef} onClick={(e) => onClickHome(e)} className="active-li">Home</li>
+            <li ref={projectsRef} onClick={(e) => onClickProjects(e)}>Projects</li>
+            <li ref={contactRef} onClick={(e) => onClickContact(e)}>Contact</li>
+            {/* add the following in as buttons
+            <li>Blog</li>
+            <li>Github</li>
+            <li>LinkedIn</li>
+            <li>Resume</li> */}
+        </ul>
     </div>
 };
 
