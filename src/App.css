@@ -213,9 +213,9 @@
 }
 
 .project {
-	background-color: #D9C2B6;
 	border: 1px solid #76768C;
 	text-align: center;
+	position: relative;
 	
 	
 	/* sizing for desktop - will have top add media query for mobile */
@@ -226,4 +226,27 @@
 	width: 12rem;
 }
 
+.project-picture {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.project-picture-overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.25);
+	z-index: -1;
+}
+
+.project-card-text {
+	position: absolute;
+	left: 2.5%;
+	top: 2.5%;
+	height: 95%;
+	width: 95%;
+	background-color: rgba(255, 255, 255, 0.8);
+}
 
