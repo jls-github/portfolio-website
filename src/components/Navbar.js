@@ -1,8 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const Navbar = (props) => {
 
     const {activePage, onSetActive} = props
+
+    const homeRef = useRef(null)
+    const projectsRef = useRef(null)
+    const contactRef = useRef(null)
+    const ulRef = useRef(null)
 
     console.log(props)
 
@@ -28,79 +33,47 @@ const Navbar = (props) => {
         console.log("clicked")
 
     }
-
-    let navBarDisplay = () => {return <ul className="black-style">
-        <li className="active-li">Home</li>
-        <li onClick={(e) => onClickProjects(e)}>Projects</li>
-        <li onClick={(e) => onClickContact(e)}>Contact</li>
-        {/* add the following in as buttons
-        <li>Blog</li>
-        <li>Github</li>
-        <li>LinkedIn</li>
-        <li>Resume</li> */}
-        </ul>
-    }
-
+    
     useEffect(() => {
         switch(activePage){
             case("HOME"):
-                navBarDisplay = (
-                    <ul className="black-style">
-                        <li className="active-li">Home</li>
-                        <li onClick={(e) => onClickProjects(e)}>Projects</li>
-                        <li onClick={(e) => onClickContact(e)}>Contact</li>
-                        {/* add the following in as buttons
-                        <li>Blog</li>
-                        <li>Github</li>
-                        <li>LinkedIn</li>
-                        <li>Resume</li> */}
-                  </ul>
-                )
+                ulRef.current.classList.remove("white-style")
+                ulRef.current.classList.add("black-style")
+                homeRef.current.classList.add("active-li")
+                projectsRef.current.classList.remove("active-li")
+                contactRef.current.classList.remove("active-li")
+                break
             case("PROJECTS"):
-                navBarDisplay = (
-                    <ul className="white-style">
-                        <li onClick={(e) => onClickHome(e)}>Home</li>
-                        <li className="active-li">Projects</li>
-                        <li onClick={(e) => onClickContact(e)}>Contact</li>
-                        {/* add the following in as buttons
-                        <li>Blog</li>
-                        <li>Github</li>
-                        <li>LinkedIn</li>
-                        <li>Resume</li> */}
-                    </ul>
-                )
+                ulRef.current.classList.remove("black-style")
+                ulRef.current.classList.add("white-style")
+                homeRef.current.classList.remove("active-li")
+                projectsRef.current.classList.add("active-li")
+                contactRef.current.classList.remove("active-li")
+                break
             case("CONTACT"):
-                navBarDisplay = (
-                    <ul className="black-style">
-                        <li onClick={(e) => onClickHome(e)}>Home</li>
-                        <li onClick={(e) => onClickProjects(e)}>Projects</li>
-                        <li className="active-li">Contact</li>
-                        {/* add the following in as buttons
-                        <li>Blog</li>
-                        <li>Github</li>
-                        <li>LinkedIn</li>
-                        <li>Resume</li> */}
-                      </ul>
-                )
+                ulRef.current.classList.remove("white-style")
+                ulRef.current.classList.add("black-style")
+                homeRef.current.classList.remove("active-li")
+                projectsRef.current.classList.remove("active-li")
+                contactRef.current.classList.add("active-li")
+                break
             default:
-                navBarDisplay = (
-                    <ul>
-                        <li>Home</li>
-                        <li>Projects</li>
-                        <li>Contact</li>
-                        {/* add the following in as buttons
-                        <li>Blog</li>
-                        <li>Github</li>
-                        <li>LinkedIn</li>
-                        <li>Resume</li> */}
-                    </ul>
-                )
-            }
+                break
+        }
         }, [activePage]
     )
 
     return <div className="navbar">
-        {navBarDisplay()}
+        <ul className="black-style" ref={ulRef}>
+                        <li ref={homeRef} onClick={(e) => onClickHome(e)} className="active-li">Home</li>
+                        <li ref={projectsRef} onClick={(e) => onClickProjects(e)}>Projects</li>
+                        <li ref={contactRef} onClick={(e) => onClickContact(e)}>Contact</li>
+                        {/* add the following in as buttons
+                        <li>Blog</li>
+                        <li>Github</li>
+                        <li>LinkedIn</li>
+                    <li>Resume</li> */}
+                  </ul>
     </div>
 };
 
