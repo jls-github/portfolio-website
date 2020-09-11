@@ -13,7 +13,7 @@ const HomePage = () => {
     }
     
     return <div className="main">
-        <Navbar props={{activePage: activePage, onSetActive: (page) => onSetActive(page)}}/>
+        <Navbar activePage={activePage} onSetActive={(page) => onSetActive(page)}/>
         <Carosel />
         <ProjectContainer />
         <ContactInformation />

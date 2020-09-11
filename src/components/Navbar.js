@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Navbar = (props) => {
 
     const {activePage, onSetActive} = props
+
     console.log(props)
 
     const setActive = (page) => {
-        onSetActive(page)
+        console.log(props)
+        console.log(page)
+        props.onSetActive(page)
     }
 
     const onClickHome = e => {
@@ -26,11 +29,22 @@ const Navbar = (props) => {
 
     }
 
+    let navBarDisplay = () => {return <ul className="black-style">
+        <li className="active-li">Home</li>
+        <li onClick={(e) => onClickProjects(e)}>Projects</li>
+        <li onClick={(e) => onClickContact(e)}>Contact</li>
+        {/* add the following in as buttons
+        <li>Blog</li>
+        <li>Github</li>
+        <li>LinkedIn</li>
+        <li>Resume</li> */}
+        </ul>
+    }
 
-    const activeSwitch = () => {
+    useEffect(() => {
         switch(activePage){
             case("HOME"):
-                return(
+                navBarDisplay = (
                     <ul className="black-style">
                         <li className="active-li">Home</li>
                         <li onClick={(e) => onClickProjects(e)}>Projects</li>
@@ -43,7 +57,7 @@ const Navbar = (props) => {
                   </ul>
                 )
             case("PROJECTS"):
-                return(
+                navBarDisplay = (
                     <ul className="white-style">
                         <li onClick={(e) => onClickHome(e)}>Home</li>
                         <li className="active-li">Projects</li>
@@ -56,7 +70,7 @@ const Navbar = (props) => {
                     </ul>
                 )
             case("CONTACT"):
-                return(
+                navBarDisplay = (
                     <ul className="black-style">
                         <li onClick={(e) => onClickHome(e)}>Home</li>
                         <li onClick={(e) => onClickProjects(e)}>Projects</li>
@@ -69,7 +83,7 @@ const Navbar = (props) => {
                       </ul>
                 )
             default:
-                return(
+                navBarDisplay = (
                     <ul>
                         <li>Home</li>
                         <li>Projects</li>
@@ -81,11 +95,12 @@ const Navbar = (props) => {
                         <li>Resume</li> */}
                     </ul>
                 )
-        }
-    }
+            }
+        }, [activePage]
+    )
 
     return <div className="navbar">
-        {activeSwitch()}
+        {navBarDisplay()}
     </div>
 };
 
