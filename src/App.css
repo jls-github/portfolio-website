@@ -203,7 +203,7 @@
 	height: 4rem;
 	border-radius: 1px solid black;
 	border-radius: 10px;
-	text-shadow: 1px 1px 1px;
+	font-style: bold;
 }
 
 .projectContainer .project-header .project-header-text h2 {
@@ -254,6 +254,7 @@
 
 .project-title {
 	font-size: 1.5rem;
+	font-style: bold;
 }
 
 .project-description {
@@ -261,7 +262,7 @@
 }
 
 .project-footer {
-	background-color: black;
+	background: linear-gradient(#F4310B, #A50BF4);
 	display: flex;
 	place-items: center;
 	border-top: 2px solid #A50BF4;
