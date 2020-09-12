@@ -1,13 +1,13 @@
 import React from 'react';
 
 
-const Project = () => {
+const Project = ({side}) => {
 
-    return <div className="project">
+    return <div className={"project " + side}>
         <div className="project-card-text">
 
-            <div className="project-title">Project Name</div>
-            <div className="project-description">Project description</div>
+            <div className="project-title">Soundside Mobile</div>
+            <div className="project-description">Mobile web application built for a local church in Tacoma, WA</div>
         </div>
         <div className="project-footer">
             <div>See More</div>

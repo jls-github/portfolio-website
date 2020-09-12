@@ -8,8 +8,10 @@ const ProjectContainer = () => {
     const [projects, setProjects] = useState(["", "", "", ""])
 
     const populateProjects = () => {
+        let i = -1;
         return projects.map(project => {
-            return <Project />
+            i++
+            return <Project side={i < projects.length/2 ? "left-side-project" : "right-side-project"}/>
         })
     }
 
@@ -22,12 +24,12 @@ const ProjectContainer = () => {
 
 
     return <div className="projectContainer">
-        <div className="project-background" style={backgroundProperties}></div>
-        <div className="project-background-overlay"></div>
+        <div className="project-background-left"></div>
+        <div className="project-background-right"></div>
 
         <div className="project-header">
             <div className="project-header-text">
-                <h2>Project Examples</h2>
+                <h2>Projects</h2>
             </div>
         </div>
         <div className="projectFlexBoxWrapper">

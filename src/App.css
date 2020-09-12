@@ -18,8 +18,8 @@
 #D8C3A5
 #E98074
 #8E8D8A
-#E85A4F
-*/
+#E85A4F */
+
 
 /* colors #3
 #F4310B
@@ -163,7 +163,7 @@
 	z-index: 1;
 	color: white;
 }
-
+/* 
 .project-background {
 	position: absolute;
 	height: 100%;
@@ -179,6 +179,22 @@
 	opacity: 0.5;
 	top: 10%;
 	bottom: 10%;
+} */
+
+.project-background-left, .project-background-right {
+	position: absolute;
+	height: 100%;
+	width: 50%;
+}
+
+.project-background-left {
+	left: 0;
+	background-color: #EAE7DC;
+}
+
+.project-background-right {
+	right: 0;
+	background-color: #E85A4F;
 }
 
 .projectContainer .project-header {
@@ -208,7 +224,7 @@
 
 .projectContainer .project-header .project-header-text h2 {
 	display: inline-block;
-	font-size: 3rem;
+	font-size: 5rem;
 }
 
 
@@ -228,10 +244,9 @@
 }
 
 .project {
-	border: 1px solid #A50BF4;
+	border: 1px solid black;
 	text-align: center;
 	position: relative;
-	background-color: white;
 	display: grid;
 	grid-template-rows: 80% 20%;
 	box-shadow: 1px 1px 1px;
@@ -243,6 +258,14 @@
 	margin-bottom: 1rem;
 	height: 15rem;
 	width: 12rem;
+}
+
+.left-side-project {
+	background-color: #E98074;
+}
+
+.right-side-project {
+	background-color: #D8C3A5;
 }
 
 .project-card-text {
@@ -262,14 +285,19 @@
 }
 
 .project-footer {
-	background: linear-gradient(#F4310B, #A50BF4);
+	background: #8E8D8A;
 	display: flex;
 	place-items: center;
-	border-top: 2px solid #A50BF4;
+	border-top: 1px solid black;
+	color: white;
 }
 
 .project-footer div {
 	width: 100%;
-	color: white;
+}
+
+.project-footer:hover {
+	color: black;
+	cursor: pointer;
 }
 
