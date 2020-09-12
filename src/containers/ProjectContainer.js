@@ -13,20 +13,21 @@ const ProjectContainer = () => {
         })
     }
 
-    // let backgroundProperties = {
-    //     backgroundImage: `url(${CoffeeCodingPicture})`,
-    //     backgroundPosition: 'center',
-    //     backgroundSize: 'cover',
-    //     backgroundRepeat: 'no-repeat',
-    //   }
+    let backgroundProperties = {
+        backgroundImage: `url(${CodePicture})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+      }
 
 
     return <div className="projectContainer">
+        <div className="project-background" style={backgroundProperties}></div>
+        <div className="project-background-overlay"></div>
 
         <div className="project-header">
-            {/* <div className="project-image" style={backgroundProperties}></div>*/}
             <div className="project-header-text">
-                <h2>Projects</h2>
+                <h2>Project Examples</h2>
             </div>
         </div>
         <div className="projectFlexBoxWrapper">
