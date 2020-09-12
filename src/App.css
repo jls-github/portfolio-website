@@ -13,6 +13,15 @@
 #808C7D
 */
 
+/* colors #2
+#EAE7DC
+#D8C3A5
+#E98074
+#8E8D8A
+#E85A4F
+
+*/
+
 /* main grid */
 
 .main {
@@ -124,17 +133,18 @@
 	align-items: center;
 	position: relative;
 	grid-template-rows: 15% 10% 60% 15%;
+	background-color: #EAE7DC;
 	/* border-top: 5rem solid #76768C;
 	border-bottom: 5rem solid #76768C; */
 }
 
-.projectContainer::before {
+/* .projectContainer::before {
 	content: "Some sort of quote goes here";
 	position: absolute;
 	height: 5%;
 	width: 100%;
 	top: 0;
-	background-color: #808C7D;
+	background-color: #E98074;
 	border-bottom: 2px solid #D9C2B6;
 	z-index: 1;
 }
@@ -145,10 +155,10 @@
 	height: 5%;
 	width: 100%;
 	bottom: 0;
-	background-color: #808C7D;
+	background-color: #E98074;
 	border-top: 2px solid #D9C2B6;
 	z-index: 1;
-}
+} */
 
 .project-background {
 	position: absolute;
@@ -181,14 +191,7 @@
 } */
 
 .projectContainer .project-header .project-header-text {
-	background-color: rgb(255, 255, 255, 0.9);
-	height: 80%;
-	width: 25%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 3px solid #808C7D;
-	border-radius: 5px;
+
 }
 
 .projectContainer .project-header .project-header-text h2 {
@@ -213,9 +216,12 @@
 }
 
 .project {
-	border: 1px solid #76768C;
+	border: 1px solid #8E8D8A;
 	text-align: center;
 	position: relative;
+	background-color: #D8C3A5;
+	display: grid;
+	grid-template-rows: 80% 20%;
 	
 	
 	/* sizing for desktop - will have top add media query for mobile */
@@ -226,27 +232,29 @@
 	width: 12rem;
 }
 
-.project-picture {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	z-index: -1;
-}
-
-.project-picture-overlay {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.25);
-	z-index: -1;
-}
-
 .project-card-text {
-	position: absolute;
-	left: 2.5%;
-	top: 2.5%;
-	height: 95%;
-	width: 95%;
-	background-color: rgba(255, 255, 255, 0.8);
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-rows: 20% 80%;
+}
+
+.project-title {
+	font-size: 1.5rem;
+}
+
+.project-description {
+
+}
+
+.project-footer {
+	border-top: 5px solid #E85A4F;
+	background-color: #8E8D8A;
+	display: flex;
+	place-items: center;
+}
+
+.project-footer div {
+	width: 100%;
 }
 
