@@ -42,6 +42,7 @@
 	height: 100%;
 	display: flex;
 	align-items: center;
+	z-index: 10;
 }
 
 .navbar ul {
@@ -216,7 +217,7 @@
 }
 
 .project {
-	border: 1px solid #8E8D8A;
+	border: 2px solid #8E8D8A;
 	text-align: center;
 	position: relative;
 	background-color: #D8C3A5;

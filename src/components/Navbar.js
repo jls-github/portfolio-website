@@ -36,8 +36,8 @@ const Navbar = (props) => {
                 contactRef.current.classList.remove("active-li")
                 break
             case("PROJECTS"):
-                ulRef.current.classList.remove("black-style")
-                ulRef.current.classList.add("white-style")
+                ulRef.current.classList.remove("white-style")
+                ulRef.current.classList.add("black-style")
                 homeRef.current.classList.remove("active-li")
                 projectsRef.current.classList.add("active-li")
                 contactRef.current.classList.remove("active-li")
