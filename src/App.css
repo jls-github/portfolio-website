@@ -151,7 +151,7 @@
 	width: 100%;
 	top: 0;
 	z-index: 1;
-	color: white;
+	color: black;
 }
 
 .projectContainer::after {
@@ -161,6 +161,7 @@
 	width: 100%;
 	bottom: 0;
 	z-index: 1;
+	text-align: right;
 	color: white;
 }
 /* 
