@@ -108,7 +108,7 @@
 
 .carosel .carosel-header {
 	top: 5rem;
-	left: 1rem;
+	left: 15%;
 	position: absolute;
 }
 
@@ -116,7 +116,8 @@
 	font-size: 5rem;
 }
 .carosel .carosel-header .carosel-subtitle {
-	font-size: 2rem;
+	font-size: 1.5rem;
+	width: 60%
 }
 
 
