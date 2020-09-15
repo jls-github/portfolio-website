@@ -141,8 +141,6 @@
 	position: relative;
 	grid-template-rows: 15% 10% 60% 15%;
 	background-color: black;
-	/* border-top: 5rem solid #76768C;
-	border-bottom: 5rem solid #76768C; */
 }
 
 .projectContainer::before {
@@ -165,23 +163,6 @@
 	text-align: right;
 	color: white;
 }
-/* 
-.project-background {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	opacity: 0.2;
-}
-
-.project-background-overlay {
-	position: absolute;
-	height: 80%;
-	width: 100%;
-	background: linear-gradient(#EAE7DC, #8E8D8A);
-	opacity: 0.5;
-	top: 10%;
-	bottom: 10%;
-} */
 
 .project-background-left, .project-background-right {
 	position: absolute;
@@ -209,12 +190,6 @@
 	align-items: center;
 	z-index: 1;
 }
-
-/* .projectContainer .project-header .project-image{
-	position: absolute;
-	height: 100%;
-	width: 100%;
-} */
 
 .projectContainer .project-header .project-header-text {
 	text-align: center;
@@ -280,10 +255,6 @@
 .project-title {
 	font-size: 1.5rem;
 	font-style: bold;
-}
-
-.project-description {
-
 }
 
 .project-footer {
