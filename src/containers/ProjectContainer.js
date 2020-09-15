@@ -24,8 +24,11 @@ const ProjectContainer = () => {
 
 
     return <div className="projectContainer">
-        <div className="project-background-left"></div>
-        <div className="project-background-right"></div>
+        <div className="project-background-left">
+            
+        </div>
+        <div className="project-background-right-top"></div>
+        <div className="project-background-right-bottom"></div>
 
         <div className="project-header">
             <div className="project-header-text">
