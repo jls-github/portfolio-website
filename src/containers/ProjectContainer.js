@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Project from '../components/Project.js';
 import CoffeeCodingPicture from '../images/coffee-coding-picture.jpeg';
 import CodePicture from '../images/code-picture.jpg';
+import SeattlePicture from '../images/SeattlePicture.jpg';
 
 const ProjectContainer = () => {
 
@@ -13,16 +14,19 @@ const ProjectContainer = () => {
         })
     }
 
-    let backgroundProperties = {
-        backgroundImage: `url(${CodePicture})`,
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
+    const backgroundProperties = (picture) => {
+        return {       
+            backgroundImage: `url(${picture})`,
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+        }
       }
 
 
     return <div className="projectContainer">
         <div className="project-background-left">
+            <div className="project-section-picture" style={ backgroundProperties(SeattlePicture)}></div>
             <div className="project-header">
                 <div className="project-header-text">
                     <h2>Projects</h2>
@@ -37,10 +41,12 @@ const ProjectContainer = () => {
 
         </div>
         <div className="project-background-right-top">
+            <div className="project-section-picture" style={ backgroundProperties(CodePicture)}></div>
             Maybe put one project here
             Or a tech stack section
         </div>
         <div className="project-background-right-bottom">
+            <div className="project-section-picture" style={ backgroundProperties(CoffeeCodingPicture)}></div>
             And another here?
             Or an About Me Section
         </div>

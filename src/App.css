@@ -194,6 +194,13 @@
 	font-size: 5rem;
 }
 
+.project-section-picture {
+	height: 100%;
+	width: 100%;
+	opacity: 0.25;
+	position: absolute;
+}
+
 
 .projectFlexBoxWrapper {
 	width: 100%;
