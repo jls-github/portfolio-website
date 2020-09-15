@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import Project from '../components/Project.js';
-import CoffeeCodingPicture from '../images/coffee-coding-picture.jpeg';
 import CodePicture from '../images/code-picture.jpg';
 
 const ProjectContainer = () => {

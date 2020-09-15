@@ -1,10 +1,11 @@
 import React from 'react';
 import SeattlePicture from '../images/SeattlePicture.jpg';
+import CodePicture from '../images/code-picture.jpg'
 
 const Carosel = () => {
 
     let backgroundProperties = {
-      backgroundImage: `url(${SeattlePicture})`,
+      backgroundImage: `url(${CodePicture})`,
       backgroundPosition: 'center',
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
