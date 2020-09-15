@@ -31,7 +31,7 @@ const ProjectContainer = () => {
             <div className="project-section-picture" style={ backgroundProperties(CoffeePicture)}></div>
             <div className="project-header">
                 <div className="project-header-text">
-                    <h2>Projects</h2>
+                    <h2>See My Work</h2>
                 </div>
             </div>
             <div className="projectFlexBoxWrapper">
