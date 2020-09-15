@@ -8,10 +8,8 @@ const ProjectContainer = () => {
     const [projects, setProjects] = useState(["", "", "", ""])
 
     const populateProjects = () => {
-        let i = -1;
         return projects.map(project => {
-            i++
-            return <Project side={i < projects.length/2 ? "left-side-project" : "right-side-project"}/>
+            return <Project />
         })
     }
 
@@ -38,8 +36,14 @@ const ProjectContainer = () => {
             </div>
 
         </div>
-        <div className="project-background-right-top"></div>
-        <div className="project-background-right-bottom"></div>
+        <div className="project-background-right-top">
+            Maybe put one project here
+            Or a tech stack section
+        </div>
+        <div className="project-background-right-bottom">
+            And another here?
+            Or an About Me Section
+        </div>
 
     </div>
 };

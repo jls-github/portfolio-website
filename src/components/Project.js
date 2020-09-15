@@ -3,7 +3,7 @@ import React from 'react';
 
 const Project = ({side}) => {
 
-    return <div className={"project " + side}>
+    return <div className="project">
         <div className="project-card-text">
 
             <div className="project-title">Soundside Mobile</div>
