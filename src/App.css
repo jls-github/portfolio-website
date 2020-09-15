@@ -155,7 +155,8 @@
 	width: 50%;
 	top: 0;
 	background-color: #BED9B6;
-
+	display: grid;
+	grid-template-rows: 25% 70%;
 }
 
 .project-background-right-top {
@@ -177,7 +178,6 @@
 }
 
 .projectContainer .project-header {
-	grid-row: 2;
 	height: 8rem;
 	font-size: 3rem;
 	width: 100%;
@@ -202,7 +202,6 @@
 
 
 .projectFlexBoxWrapper {
-	grid-row: 3;
 	width: 100%;
 	display: flex;
 	justify-content: center;
