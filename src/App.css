@@ -138,6 +138,8 @@
 	grid-template-rows: 25% 70%;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
+	border-right: 1px solid black;
+	box-sizing: border-box;
 }
 
 .project-background-right-top {
@@ -148,6 +150,9 @@
 	left: 75%;
 	background-color: #76768C;
 	border-top-right-radius: 5px;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	box-sizing: border-box;
 }
 
 .project-background-right-bottom {
@@ -158,6 +163,9 @@
 	left: 75%;
 	background-color: #BED9B6;
 	border-bottom-right-radius: 5px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	box-sizing: border-box;
 }
 
 .projectContainer .project-header {
