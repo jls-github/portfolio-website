@@ -11,12 +11,23 @@ const HomePage = () => {
     const onSetActive = (page) => {
         setActivePage(page)
     }
+
+    const displayPage = () => {
+        switch(activePage) {
+            case("HOME"):
+                return <Carosel />
+            case("PROJECTS"):
+                return <ProjectContainer />
+            case("CONTACT"):
+                return <ContactInformation />
+            default:
+                return <div>Loading...</div>
+        }
+    }
     
     return <div className="main">
         <Navbar activePage={activePage} onSetActive={(page) => onSetActive(page)}/>
-        <Carosel />
-        <ProjectContainer />
-        <ContactInformation />
+        {displayPage()}
     </div>
 };
 
