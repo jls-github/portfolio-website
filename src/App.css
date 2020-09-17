@@ -32,8 +32,6 @@
 .main {
 	display: grid;
 	/* desktop view grid */
-	grid-template-rows: 15rem 50rem 100vh;
-	grid-template-columns: 100%;
 }
 
 
