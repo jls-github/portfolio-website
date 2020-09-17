@@ -123,6 +123,8 @@
 	width: 100%;
 	height: 100%;
 	position: absolute;
+	box-shadow: 1px 1px 10px;
+	border-radius: 5px;
 }
 
 .project-background-left, .project-background-right {
@@ -139,6 +141,8 @@
 	background-color: #D9C2B6;
 	display: grid;
 	grid-template-rows: 25% 70%;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 
 .project-background-right-top {
@@ -148,6 +152,7 @@
 	top: 0;
 	left: 75%;
 	background-color: #76768C;
+	border-top-right-radius: 5px;
 }
 
 .project-background-right-bottom {
@@ -156,7 +161,8 @@
 	width: 25%;
 	top: 50%;
 	left: 75%;
-	background-color: #BED9B6
+	background-color: #BED9B6;
+	border-bottom-right-radius: 5px;
 }
 
 .projectContainer .project-header {
