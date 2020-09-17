@@ -125,12 +125,7 @@
 	position: absolute;
 	box-shadow: 1px 1px 10px;
 	border-radius: 5px;
-}
-
-.project-background-left, .project-background-right {
-	position: absolute;
-	height: 50%;
-	width: 100%;
+	border: 2px solid black;
 }
 
 .project-background-left {
