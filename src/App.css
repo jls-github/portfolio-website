@@ -109,9 +109,11 @@
 /* project styling */
 
 .projectContainer {
-	position: relative;
+	position: absolute;
 	width: 80%;
 	left: 10%;
+	top: 10%;
+	height: 80%;
 }
 
 .project-background-left, .project-background-right {
