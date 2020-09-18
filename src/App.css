@@ -153,6 +153,7 @@
 	border-left: 1px solid black;
 	border-bottom: 1px solid black;
 	box-sizing: border-box;
+	color: white;
 }
 
 .project-background-right-bottom {
@@ -219,7 +220,7 @@
 	position: relative;
 	display: grid;
 	grid-template-rows: 80% 20%;
-	box-shadow: 1px 1px 1px;
+	box-shadow: 1px 1px 3px;
 	background-color: #BED9B6;
 	
 	
