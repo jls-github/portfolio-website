@@ -256,3 +256,10 @@
 	background-color: white;
 }
 
+/* Contact Styling */
+
+.contact-form {
+	background-color: grey;
+	height: 10rem;
+	width: 100vh;
+}

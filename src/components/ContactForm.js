@@ -15,7 +15,7 @@ const ContactForm = () => {
             }}
         >
                 {({ isSubmitting }) => (
-                    <Form>
+                    <Form className="contact-form">
                         <Field type="text" name="name" />
                         <Field type="email" name="email" />
                         <Field type="textarea" name="message" />
