@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactForm from 'ContactForm.js';
+import ContactForm from './ContactForm.js';
 
 const ContactInformation = () => {
     return <div>
