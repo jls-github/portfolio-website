@@ -26,8 +26,11 @@ const HomePage = () => {
     }
     
     return <div className="main">
-        <Navbar activePage={activePage} onSetActive={(page) => onSetActive(page)}/>
-        {displayPage()}
+        <div className="frame">
+
+            <Navbar activePage={activePage} onSetActive={(page) => onSetActive(page)}/>
+            {displayPage()}
+        </div>
     </div>
 };
 
