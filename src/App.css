@@ -53,13 +53,6 @@
 	flex-direction: column;
 	height: 25%;
 	justify-content: space-between;
-}
-
-.navbar .white-style {
-	color: rgba(255, 255, 255, 0.75);
-}
-
-.navbar .black-style {
 	color: rgba(0, 0, 0, 0.5);
 }
 
