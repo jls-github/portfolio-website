@@ -7,8 +7,6 @@ const Navbar = (props) => {
     const homeRef = useRef(null)
     const projectsRef = useRef(null)
     const contactRef = useRef(null)
-    const ulRef = useRef(null)
-
 
     const setActive = (page) => {
         onSetActive(page)
@@ -29,22 +27,16 @@ const Navbar = (props) => {
     useEffect(() => {
         switch(activePage){
             case("HOME"):
-                ulRef.current.classList.remove("white-style")
-                ulRef.current.classList.add("black-style")
                 homeRef.current.classList.add("active-li")
                 projectsRef.current.classList.remove("active-li")
                 contactRef.current.classList.remove("active-li")
                 break
             case("PROJECTS"):
-                ulRef.current.classList.remove("white-style")
-                ulRef.current.classList.add("black-style")
                 homeRef.current.classList.remove("active-li")
                 projectsRef.current.classList.add("active-li")
                 contactRef.current.classList.remove("active-li")
                 break
             case("CONTACT"):
-                ulRef.current.classList.remove("white-style")
-                ulRef.current.classList.add("black-style")
                 homeRef.current.classList.remove("active-li")
                 projectsRef.current.classList.remove("active-li")
                 contactRef.current.classList.add("active-li")
@@ -56,7 +48,7 @@ const Navbar = (props) => {
     )
 
     return <div className="navbar">
-        <ul className="black-style" ref={ulRef}>
+        <ul>
             <li ref={homeRef} onClick={(e) => onClickHome(e)} className="active-li">Home</li>
             <li ref={projectsRef} onClick={(e) => onClickProjects(e)}>Projects</li>
             <li ref={contactRef} onClick={(e) => onClickContact(e)}>Contact</li>
