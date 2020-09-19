@@ -14,12 +14,12 @@ const ContactForm = () => {
                 }, 400);
             }}
         >
-                {({ isSubmitting }) => (
+                {() => (
                     <Form className="contact-form">
                         <Field type="text" name="name" />
                         <Field type="email" name="email" />
                         <Field type="textarea" name="message" />
-                        <button type="submit" disabled={isSubmitting}>
+                        <button type="submit">
                             Submit
                         </button>
                     </Form>
