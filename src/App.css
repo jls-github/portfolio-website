@@ -48,6 +48,7 @@
 	box-sizing:border-box;
 	display:inline-block;
 	margin: 5vh 5vw;
+	margin-left: 10vw;
 	height: 90vh;
 	padding:8vmin;
 	position:relative;
