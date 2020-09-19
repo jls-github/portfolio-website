@@ -25,13 +25,13 @@ const HomePage = () => {
         }
     }
     
-    return <div className="main">
-            <Navbar activePage={activePage} onSetActive={(page) => onSetActive(page)}/>
-        <div className="frame">
-
-            {displayPage()}
-        </div>
+    return (
+    <div className="main">
+        <Navbar activePage={activePage} onSetActive={(page) => onSetActive(page)}/>
+        <div className="frame"></div>
+        {displayPage()}
     </div>
+    )
 };
 
 export default HomePage;
