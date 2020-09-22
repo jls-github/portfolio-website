@@ -27,7 +27,7 @@ const ProjectContainer = () => {
 
 
     return <div className="framed-wrapper">
-        <div className="projectWrapper">
+        <div className="wrapper projectWrapper">
 
             <div className="project-background-left">
                 <div className="project-section-picture" style={ backgroundProperties(CoffeePicture)}></div>
