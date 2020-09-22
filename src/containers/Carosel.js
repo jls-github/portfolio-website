@@ -10,7 +10,7 @@ const Carosel = () => {
       backgroundRepeat: 'no-repeat',
     }
 
-    return <div className="carosel">
+    return <div className="wrapper">
         <div className="carosel-header">
           <div className="carosel-title">John Souza</div>
           <div className="carosel-subtitle">Creating software to build business in the Seattle Metro Area</div>

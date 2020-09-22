@@ -34,6 +34,14 @@
 	/* desktop view grid */
 }
 
+/* General Components */
+
+.wrapper {
+	height: 100%;
+	width: 100%;
+	display: flex;
+}
+
 /* Frame */
 
 .frame {
@@ -129,19 +137,10 @@
 }
 /* carosel styling */
 
-.carosel {
-	height: 100%;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-}
-
-.carosel .carosel-header .carosel-title {
+.carosel-header .carosel-title {
 	font-size: 5rem;
 }
-.carosel .carosel-header .carosel-subtitle {
+.carosel-header .carosel-subtitle {
 	font-size: 1.5rem;
 	width: 60%
 }
