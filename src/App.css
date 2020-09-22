@@ -43,6 +43,8 @@
 }
 
 .framed-wrapper {
+	left: 10%;
+	top: 10%;
 	height: 80%;
 	width: 80%;
 	display: flex;
