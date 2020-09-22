@@ -15,6 +15,7 @@ const Carosel = () => {
           <div className="carosel-title">John Souza</div>
           <div className="carosel-subtitle">Creating software to build business in the Seattle Metro Area</div>
         </div>
+        <div class="carosel-image"></div>
     </div>
 };
 
