@@ -26,7 +26,7 @@ const ProjectContainer = () => {
       }
 
 
-    return <div className="projectContainer">
+    return <div className="framed-wrapper">
         <div className="projectWrapper">
 
             <div className="project-background-left">

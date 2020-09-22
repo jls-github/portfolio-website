@@ -162,17 +162,6 @@
 
 /* project styling */
 
-.projectContainer {
-	position: absolute;
-	width: 80%;
-	left: 10%;
-	top: 10%;
-	height: 80%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
 .projectWrapper {
 	width: 100%;
 	height: 100%;
