@@ -130,23 +130,13 @@
 
 .navbar ul li:hover {
 	cursor: pointer;
-}
-
-.navbar .white-style li:hover {
-	color: white;
-}
-
-.navbar .black-style li:hover {
 	color: black;
 }
 
-.navbar .white-style .active-li {
-	color: white;
-}
-
-.navbar .black-style .active-li {
+.navbar ul .active-li {
 	color: black;
 }
+
 /* carosel styling */
 
 .carosel-header {
