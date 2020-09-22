@@ -42,6 +42,15 @@
 	display: flex;
 }
 
+.framed-wrapper {
+	height: 80%;
+	width: 80%;
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+}
+
 /* Frame */
 
 .frame {
