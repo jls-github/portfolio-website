@@ -149,6 +149,13 @@
 }
 /* carosel styling */
 
+.carosel-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
 .carosel-header .carosel-title {
 	font-size: 5rem;
 }
