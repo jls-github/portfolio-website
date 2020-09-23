@@ -1,10 +1,13 @@
 import React from 'react';
 
 
-const Project = ({title}) => {
+const Project = ({title, picture}) => {
 
     return <div className="project">
-        <div></div>
+        <div className="wrapper">
+            <img src={picture} alt=""/>
+        </div>
+
         <div className="project-footer">
             <div>{title}</div>
         </div>

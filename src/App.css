@@ -204,6 +204,16 @@ h2 {
 	cursor: pointer;
 }
 
+.project .wrapper {
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.project .wrapper img {
+	width: 100%;
+}
+
 .project-footer {
 	background: white;
 	display: flex;
