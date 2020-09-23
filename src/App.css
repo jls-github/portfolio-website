@@ -183,13 +183,13 @@ h2 {
 }
 
 .project {
-	border: 1px solid black;
+	border: 5px solid white;
 	text-align: center;
 	position: relative;
 	display: grid;
 	grid-template-rows: 80% 20%;
 	box-shadow: 1px 1px 3px;
-	background-color: #BED9B6;
+	background-color: white;;
 	
 	
 	/* sizing for desktop - will have top add media query for mobile */
@@ -214,11 +214,10 @@ h2 {
 }
 
 .project-footer {
-	background: black;
+	background: white;
 	display: flex;
 	place-items: center;
-	border-top: 1px solid black;
-	color: white;
+	color: black;
 }
 
 .project-footer div {
