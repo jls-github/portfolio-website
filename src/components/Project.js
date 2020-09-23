@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Project = ({side}) => {
+const Project = () => {
 
     return <div className="project">
         <div></div>
