@@ -175,6 +175,10 @@ h2 {
 	top: 0;
 }
 
+.project-wrapper .wrapper {
+	justify-content: center;
+}
+
 .project-container {
 	display: flex;
 	justify-content: space-around;

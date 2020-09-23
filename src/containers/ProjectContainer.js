@@ -19,7 +19,9 @@ const ProjectContainer = () => {
 
 
     return <div className="framed-wrapper project-wrapper">
-        <h2>My Work</h2>
+        <div className="wrapper">
+            <h2>My Work</h2>
+        </div>
         <div className="project-container">
             {populateProjects()}
         </div>
