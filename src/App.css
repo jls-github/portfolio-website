@@ -200,19 +200,6 @@ h2 {
 	width: 12rem;
 }
 
-
-.project-card-text {
-	height: 100%;
-	width: 100%;
-	display: grid;
-	grid-template-rows: 40% 60%;
-}
-
-.project-title {
-	font-size: 1.5rem;
-	font-style: bold;
-}
-
 .project-footer {
 	background: white;
 	display: flex;
