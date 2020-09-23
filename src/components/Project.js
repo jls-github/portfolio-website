@@ -1,12 +1,12 @@
 import React from 'react';
 
 
-const Project = () => {
+const Project = ({title}) => {
 
     return <div className="project">
         <div></div>
         <div className="project-footer">
-            <div>See More</div>
+            <div>{title}</div>
         </div>
     </div>
 };

@@ -3,11 +3,11 @@ import Project from '../components/Project.js';
 
 const ProjectContainer = () => {
 
-    const [projects, setProjects] = useState(["", "", ""])
+    const [projects, setProjects] = useState([{title: "Soundside Mobile"}, {title: "Flatchat"}, {title: "Dwellingly"}])
 
     const populateProjects = () => {
         return projects.map(project => {
-            return <Project />
+            return <Project title={project.title}/>
         })
     }
 
