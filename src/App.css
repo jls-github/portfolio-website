@@ -166,7 +166,9 @@ h2 {
 /* project styling */
 
 .project-wrapper {
-	flex-direction: column;
+	display: grid;
+	grid-template-rows: 25% 75%;
+	grid-template-columns: 1fr;
 }
 
 .project-wrapper h2 {
@@ -181,8 +183,9 @@ h2 {
 
 .project-container {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	width: 80%;
+	place-self: center;
 }
 
 .project {
