@@ -161,6 +161,7 @@ h2 {
 	height: 400px;
 	width: 400px;
 	background-color: white;
+	border-radius: 50%;
 }
 
 .carosel-image img {
