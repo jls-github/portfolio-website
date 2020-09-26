@@ -163,6 +163,10 @@ h2 {
 	background-color: white;
 }
 
+.carosel-image img {
+	border-radius: 50%;
+}
+
 /* project styling */
 
 .project-wrapper {
