@@ -184,6 +184,7 @@ h2 {
 
 .carosel-image img {
 	border-radius: 50%;
+	box-shadow: 1px 1px 10px black;
 }
 
 /* project styling */
