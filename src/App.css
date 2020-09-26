@@ -4,6 +4,7 @@
 	margin: 0;
 	border: 0;
 	font-family: Didot, Serif;
+	color: white;
 }
 
 h2 {
@@ -68,7 +69,7 @@ h2 {
 	border-radius:2px;
 	border-right-color:#eee;
 	border-top-color:#ddd;
-	box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+	box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 15px 10px rgba(0,0,0,.25);
 	box-sizing:border-box;
 	display:inline-block;
 	margin: 5vh 5vw;
@@ -77,6 +78,7 @@ h2 {
 	padding:8vmin;
 	position:relative;
 	text-align:center;
+	overflow: hidden;
 }
 
 .frame:before {
@@ -107,6 +109,16 @@ h2 {
 	position: fixed;
 	height: 100%;
 	width: 100%;
+}
+
+.paper-texture-image {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	max-width: 100%;
+	transform: rotate(180deg);
 }
 
 
