@@ -4,7 +4,6 @@
 	margin: 0;
 	border: 0;
 	font-family: Didot, Serif;
-	color: white;
 }
 
 h2 {
@@ -118,7 +117,7 @@ h2 {
 	bottom: 0;
 	right: 0;
 	max-width: 100%;
-	transform: rotate(180deg);
+	rotate: 180deg;
 }
 
 

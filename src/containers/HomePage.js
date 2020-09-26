@@ -4,7 +4,7 @@ import ProjectContainer from './ProjectContainer.js';
 import Navbar from '../components/Navbar.js';
 import Carosel from './Carosel.js';
 import WallPicture from '../images/wall.jpg';
-import PaperTexture from '../images/paper_texture_2.jpg';
+import PaperTexture from '../images/paper_texture_5.jpg';
 
 const HomePage = () => {
 
