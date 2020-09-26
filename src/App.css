@@ -103,6 +103,12 @@ h2 {
 	  z-index: -5;
 }
 
+.background-picture {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+}
+
 
 /* navbar styling */
 
