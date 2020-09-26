@@ -8,7 +8,7 @@ const Project = ({title, picture}) => {
             <div className="project-card-front">
                 <div className="wrapper">
                     <img src={picture} alt=""/>
-                </div>x`
+                </div>
                 <div className="project-footer">
                     <div>{title}</div>
                 </div>
