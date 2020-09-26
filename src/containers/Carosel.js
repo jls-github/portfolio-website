@@ -1,14 +1,7 @@
 import React from 'react';
-import SeattlePicture from '../images/SeattlePicture.jpg';
 
 const Carosel = () => {
 
-    let backgroundProperties = {
-      backgroundImage: `url(${SeattlePicture})`,
-      backgroundPosition: 'center',
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-    }
 
     return <div className="framed-wrapper">
         <div className="carosel-header">
