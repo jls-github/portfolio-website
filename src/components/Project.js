@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Project = ({title, picture}) => {
+const Project = ({title, picture, description, liveSite, github}) => {
 
     return <div className="project">
         <div className="project-card">
@@ -13,7 +13,11 @@ const Project = ({title, picture}) => {
                     <div>{title}</div>
                 </div>
             </div>
-            <div className="project-card-back"></div>
+            <div className="project-card-back">
+                <div>{description}</div>
+                <div>{liveSite}</div>
+                <div>{github}</div>
+            </div>
         </div>
     </div>
 };
