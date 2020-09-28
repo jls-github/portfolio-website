@@ -15,8 +15,8 @@ const Project = ({title, picture, description, liveSite, github}) => {
             </div>
             <div className="project-card-back">
                 <div>{description}</div>
-                <div>{liveSite}</div>
-                <div>{github}</div>
+                <div>{liveSite ? <a href={liveSite}>Live Site</a> : null}</div>
+                <div><a href={github}>View on Github</a></div>
             </div>
         </div>
     </div>
