@@ -1,7 +1,5 @@
 import React from 'react';
 import PortfolioPicture from '../images/John_Souza.jpeg'
-import WallPicture from '../images/wall.jpg';
-import PaperTexture from '../images/paper_texture_5.jpg';
 
 const Carosel = () => {
 
