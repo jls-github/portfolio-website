@@ -200,6 +200,7 @@ h2 {
 
 .project-wrapper {
 	display: grid;
+	text-align: center;
 }
 
 .project-wrapper h2 {
@@ -322,13 +323,11 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	text-align: center;
 }
 
 .contact-container {
-	width: 60%;
-	left: 20%;
-	position: absolute;
-	height: 80%;
+
 }
 
 .contact-form {
