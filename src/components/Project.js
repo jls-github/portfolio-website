@@ -15,7 +15,10 @@ const Project = ({title, frontPicture, backPicture, description, liveSite, githu
             </div>
             <div className="project-card-back">
                 <div className="project-card-back-info">
-                    <img src={backPicture} alt="" />
+                    <div className="wrapper">
+
+                        <img src={backPicture} alt="" />
+                    </div>
                     <div className="project-description">{description}</div>
                     <div className="project-site">{liveSite ? <a href={liveSite}>Live Site</a> : null}</div>
                     <div className="project-github"><a href={github}>View on Github</a></div>
