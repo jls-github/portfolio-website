@@ -32,8 +32,6 @@ const HomePage = () => {
         <img className="background-picture" src={WallPicture} alt=""/>
         <Navbar activePage={activePage} onSetActive={(page) => onSetActive(page)}/>
         <div className="frame">
-            <img className="paper-texture-image" src={PaperTexture} alt=""/>
-
             {displayPage()}
         </div>
     </div>
