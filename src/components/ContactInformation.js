@@ -1,10 +1,12 @@
 import React from 'react';
-import ContactForm from './ContactForm.js';
 
 const ContactInformation = () => {
     return <div className="contact-wrapper">
         <div className="contact-container">
-            <ContactForm />
+            <h2>Contact Me!</h2>
+            <p>souzajohnlee@gmail.com</p>
+            <p>https://www.linkedin.com/in/jls-jls/</p>
+            <p>https://github.com/jls-github</p>
         </div>
     </div>
 };
