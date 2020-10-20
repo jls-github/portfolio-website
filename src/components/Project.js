@@ -1,13 +1,13 @@
 import React from 'react';
 
 
-const Project = ({title, picture, description, liveSite, github}) => {
+const Project = ({title, frontPicture, backPicture, description, liveSite, github}) => {
 
     return <div className="project">
         <div className="project-card">
             <div className="project-card-front">
                 <div className="wrapper">
-                    <img src={picture} alt=""/>
+                    <img src={frontPicture} alt=""/>
                 </div>
                 <div className="project-footer">
                     <div>{title}</div>
@@ -15,6 +15,7 @@ const Project = ({title, picture, description, liveSite, github}) => {
             </div>
             <div className="project-card-back">
                 <div className="project-card-back-info">
+                    <img src={backPicture} alt="" />
                     <div className="project-description">{description}</div>
                     <div className="project-site">{liveSite ? <a href={liveSite}>Live Site</a> : null}</div>
                     <div className="project-github"><a href={github}>View on Github</a></div>
