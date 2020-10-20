@@ -8,7 +8,9 @@ const Carosel = () => {
 
     return <div className="carosel-container">
 
+        <img className="background-picture" src={WallPicture} alt=""/>
         <div className="frame">
+            <img className="paper-texture-image" src={PaperTexture} alt=""/>
           <div className="framed-wrapper">
               <div className="carosel-header">
                 <div className="carosel-title">John Souza</div>
