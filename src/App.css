@@ -37,7 +37,7 @@ h2 {
 .main {
 	position: absolute;
 	display: grid;
-	grid-template-rows: 100vh auto auto;
+	grid-template-rows: 100% auto auto;
 	grid-template-columns: 100%;
 	/* desktop view grid */
 }
@@ -165,7 +165,8 @@ h2 {
 /* carosel styling */
 
 .carosel-container {
-
+	height: 100%;
+	width: 100%;
 }
 
 .carosel-header {
