@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ContactInformation = () => {
-    return <div className="contact-wrapper">
+    return <div className="framed-wrapper">
         <div className="contact-container">
             <h2>Contact Me!</h2>
             <p>souzajohnlee@gmail.com</p>
