@@ -1,10 +1,23 @@
-import React from 'react';
+import React, {useRef} from 'react';
 
 
 const Project = ({title, frontPicture, backPicture, description, liveSite, github}) => {
 
-    return <div className="project">
-        <div className="project-card">
+
+    const projectRef = useRef(null)
+
+    const setProjectFlipClass = (event) => {
+        event.preventDefault()
+        projectRef.current.classList.add("project-card-hover")
+    }
+
+    const removeProjectFlipClass = (event) => {
+        event.preventDefault()
+        projectRef.current.classList.remove("project-card-hover")
+    }
+
+    return <div className="project" onMouseEnter={setProjectFlipClass} onMouseLeave={removeProjectFlipClass}>
+        <div className="project-card" ref={projectRef}>
             <div className="project-card-front">
                 <div className="wrapper">
                     <img src={frontPicture} alt=""/>

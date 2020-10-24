@@ -236,8 +236,8 @@ h2 {
 	transition: all 1.25s ease;
 }
 
-.project-card:hover {
-	transform: rotateY(180deg)
+.project-card-hover {
+	transform: rotateY(180deg);
 }
 
 .project-card-front, .project-card-back {
