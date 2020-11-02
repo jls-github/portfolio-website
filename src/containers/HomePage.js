@@ -4,6 +4,7 @@ import ProjectCardContainer from './ProjectCardContainer.js';
 import Navbar from '../components/Navbar.js';
 import Carosel from './Carosel.js';
 import WallPicture from '../images/wall.jpg';
+import ProjectData from '../data/ProjectData.js';
 
 const HomePage = () => {
 

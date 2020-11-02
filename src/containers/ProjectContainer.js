@@ -1,7 +1,20 @@
-import React, {Fragment} from 'react'
+import React from 'react';
+import ProjectData from '../data/ProjectData.js';
+import Project from '../components/Project';
 
 const ProjectContainer = () => {
-    return <Fragment></Fragment>
+
+    const projectDivs = () => {
+        return ProjectData.map(project => {
+            return <Project {...project} />
+        })
+    }
+
+    return (
+        <div>
+
+        </div>
+    )
 }
 
 export default ProjectContainer
