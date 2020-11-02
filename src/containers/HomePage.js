@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
 import ContactInformation from '../components/ContactInformation.js';
-import ProjectContainer from './ProjectContainer.js';
+import ProjectCardContainer from './ProjectCardContainer.js';
 import Navbar from '../components/Navbar.js';
 import Carosel from './Carosel.js';
 import WallPicture from '../images/wall.jpg';
-import PaperTexture from '../images/paper_texture_5.jpg';
 
 const HomePage = () => {
 
@@ -19,7 +18,7 @@ const HomePage = () => {
             case("HOME"):
                 return <Carosel />
             case("PROJECTS"):
-                return <ProjectContainer />
+                return <ProjectCardContainer />
             case("CONTACT"):
                 return <ContactInformation />
             default:

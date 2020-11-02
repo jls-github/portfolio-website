@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Project from '../components/Project.js';
+import Project from '../components/ProjectCard.js';
 import CoffeePicture from '../images/CoffeePicture.jpg'
 import SoundsideIcon from '../images/Soundside_Mark.png'
 import DwellinglyIcon from '../images/Dwellingly_Logo.png'
