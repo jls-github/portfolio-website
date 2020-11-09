@@ -34,7 +34,7 @@ const Project = ({title, frontPicture, backPicture, description, liveSite, githu
                     <div className="project-info">
                         <div className="project-description">{description}</div>
                         <div className="project-site">{liveSite ? <a href={liveSite}>Live Site</a> : null}</div>
-                        <div className="project-github"><a href={github}>View on Github</a></div>
+                        <div className="project-github"><a href={github}>Github</a></div>
                     </div>
                 </div>
             </div>
